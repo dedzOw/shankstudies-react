@@ -1,0 +1,33 @@
+.main-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-nav a {
+    display: block;
+    color: var(--white);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+    color: var(--accent-light);
+}
+
+.main-nav .parent-button {
+    padding: 9px 13px;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+@media (max-width: 800px) {
+    .main-nav ul {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

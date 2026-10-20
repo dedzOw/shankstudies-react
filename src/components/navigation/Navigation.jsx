@@ -2,7 +2,7 @@ import "./Navigation.css";
 
 const Navigation = () => {
     return (
-        <nav className="main-navigation">
+        <nav className="main-nav">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/Units">Units 1-5</a></li>

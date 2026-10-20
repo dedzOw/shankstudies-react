@@ -1,9 +1,7 @@
-import "./App.css";
+import Header from "./components/header/Header";
 
 function App() {
-  return (
-      <h1>Greetings. My react app works.</h1>
-  );
+  return <Header />;
 }
 
 export default App;

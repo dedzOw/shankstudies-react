@@ -1,1 +1,31 @@
-.main-header h1 {color:green};
+/* Header components */
+.main-header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.main-header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.main-header h1 span {
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .main-header .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
