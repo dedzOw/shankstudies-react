@@ -16,7 +16,7 @@ const Hero = () => {
                     <Card title="Study Tools" description="Writing guides, maps, and source analysis" to="/study-tools" linkText="Open Study Tools" />
                 </section>
             </div>
-            <p id="scroll-arrow">â</p>
+            <p id="scroll-arrow">⌄</p>
         </section>
     );
 };

@@ -20,10 +20,6 @@
     transition: 0.4s;
 }
 
-#scroll-arrow.bounce-arrow {
-    transform: translate(-50%, 8px);
-}
-
 .hero-content {
     max-width: 900px;
 }
