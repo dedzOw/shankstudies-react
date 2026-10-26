@@ -1,0 +1,243 @@
+.units-section {
+    padding: 70px 0;
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.units-section h2,
+.guide-section h2,
+.teacher-section h2 {
+    margin: 0 0 30px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+}
+
+.section-link {
+    float: right;
+    margin-top: -55px;
+    color: var(--accent-color);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.unit-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.guide-section {
+    padding: 70px 0;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.guide-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    text-align: left;
+}
+
+.guide-cards article {
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+    padding: 25px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.guide-cards .number {
+    margin-top: 0;
+    color: var(--accent-color);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.guide-cards h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+}
+
+.guide-cards article > p:not(.number) {
+    color: var(--gray-text);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.guide-cards a,
+.bottom-link-cards a {
+    margin-top: auto;
+    color: var(--red-color);
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.teacher-section {
+    padding: 70px 0;
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.teacher-content {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+}
+
+.teacher-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    margin-right: 40px;
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;
+    color: var(--white);
+    text-align: center;
+}
+
+.teacher-image p {
+    font-size: 13px;
+}
+
+.teacher-content > div:last-child {
+    max-width: 550px;
+}
+
+.teacher-content h2 {
+    margin-bottom: 15px;
+}
+
+.teacher-content p:not(.small-heading) {
+    color: var(--light-text);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.bottom-links {
+    padding: 70px 0;
+    background-color: var(--background-color);
+}
+
+.bottom-link-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.bottom-link-cards article {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.bottom-link-cards article:not(:last-child) {
+    border-right: 1px solid var(--border-color);
+}
+
+.bottom-link-cards h3 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.bottom-link-cards p {
+    color: var(--gray-text);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+@media (max-width: 550px) {
+    .unit-cards,
+    .guide-cards,
+    .bottom-link-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .guide-cards article {
+        min-height: 220px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .teacher-content {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .teacher-image {
+        margin: 0 auto 25px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .bottom-link-cards article:not(:last-child) {
+        border-right: 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+}
+
+.section-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.section-title-row h2 {
+    margin-bottom: 0;
+}
+
+.section-title-row .section-link {
+    float: none;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.teacher-image {
+    flex-shrink: 0;
+}
+
+.teacher-content > div:last-child {
+    min-width: 0;
+}
+
+@media (max-width: 1000px) {
+    .unit-cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .guide-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 550px) {
+    .unit-cards,
+    .guide-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title-row {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
