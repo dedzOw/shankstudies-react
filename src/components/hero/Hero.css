@@ -3,8 +3,9 @@
     min-height: 680px;
     padding: 150px 0 75px;
     text-align: center;
-    color: var(--white);
-    background-image: linear-gradient(var(--blue-overlay-light), var(--blue-overlay-dark)), url("https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Washington_Crossing_the_Delaware_by_Emanuel_Leutze%2C_MMA-NYC%2C_1851.jpg/1280px-Washington_Crossing_the_Delaware_by_Emanuel_Leutze%2C_MMA-NYC%2C_1851.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail");
+    color: white;
+    background-color: #172848;
+    background-image: linear-gradient(rgba(15, 26, 46, 0.71),rgba(19, 35, 65, 0.84)), url("/images/washington.jpg");
     background-size: cover;
     background-position: center;
 }
