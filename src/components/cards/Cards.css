@@ -1,0 +1,268 @@
+.unit-card {
+    display: block;
+    min-height: 225px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--dark-card);
+    color: var(--white);
+    text-decoration: none;
+}
+
+.unit-card > p {
+    margin: 0 0 20px;
+    padding: 26px 10px;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.unit-card h3,
+.unit-card span {
+    display: block;
+    margin: 0 15px 15px;
+}
+
+.unit-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+}
+
+.unit-card span {
+    color: var(--light-text);
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.video-card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+}
+
+.video-card a {
+    margin-top: auto;
+    color: var(--red-color);
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.standards-list {
+    display: grid;
+    gap: 14px;
+    margin: 24px 0;
+}
+
+.standards-list article {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding: 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.standards-list article > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    min-width: 56px;
+    min-height: 56px;
+    margin: 0;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.standards-list h3 {
+    margin: 0 0 6px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+}
+
+.standards-list span {
+    color: var(--gray-text);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.student-work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.student-work-grid article {
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.student-work-grid header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: var(--main-color);
+    color: var(--accent-color);
+}
+
+.student-work-grid header p,
+.student-work-grid header span {
+    margin: 0;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.student-work-grid header span {
+    padding: 4px 7px;
+    background-color: var(--accent-color);
+    color: var(--main-color);
+}
+
+.student-work-grid article > div {
+    min-height: 175px;
+    padding: 20px;
+}
+
+.student-work-grid h3 {
+    margin: 0 0 12px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+}
+
+.student-work-grid article > div p {
+    margin: 0;
+    color: var(--gray-text);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.video-grid {
+    display: grid;
+    gap: 18px;
+}
+
+.video-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.video-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+    padding: 24px;
+    border: 1px solid var(--accent-color);
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.video-card > p:first-child {
+    margin: 0 0 12px;
+    color: var(--accent-light);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.video-card h3 {
+    min-height: 42px;
+    margin: 0 0 18px;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 165px;
+    margin: 0 0 18px;
+    border: 0;
+}
+
+.video-card .video-description {
+    margin: 0 0 18px;
+    color: var(--accent-light);
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.45;
+}
+
+.video-card a {
+    margin-top: auto;
+    color: var(--accent-light);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.video-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 110px;
+    margin-bottom: 20px;
+    border: 1px solid var(--outline-color);
+    background-color: var(--main-color);
+    color: var(--light-text);
+    font-size: 13px;
+    text-align: center;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 170px;
+    border: 0;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 550px) {
+    .video-grid,
+    .student-work-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.content-card {
+    min-width: 0;
+}
+
+.unit-card,
+.video-card,
+.student-work-grid article {
+    min-width: 0;
+}
+
+.unit-card h3,
+.video-card h3 {
+    overflow-wrap: anywhere;
+}
+
+.video-card .video-placeholder {
+    min-height: 165px;
+}
+
+.standards-list article > div {
+    min-width: 0;
+}
+
+@media (max-width: 800px) {
+    .video-grid,
+    .student-work-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 550px) {
+    .video-grid,
+    .student-work-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,0 +1,127 @@
+.hero {
+    position: relative;
+    min-height: 680px;
+    padding: 150px 0 75px;
+    text-align: center;
+    color: var(--white);
+    background-image: linear-gradient(var(--blue-overlay-light), var(--blue-overlay-dark)), url("https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Washington_Crossing_the_Delaware_by_Emanuel_Leutze%2C_MMA-NYC%2C_1851.jpg/1280px-Washington_Crossing_the_Delaware_by_Emanuel_Leutze%2C_MMA-NYC%2C_1851.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail");
+    background-size: cover;
+    background-position: center;
+}
+
+#scroll-arrow {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    margin: 0;
+    font-size: 28px;
+    transform: translateX(-50%);
+    transition: 0.4s;
+}
+
+#scroll-arrow.bounce-arrow {
+    transform: translate(-50%, 8px);
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero h2 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 56px;
+    letter-spacing: 2px;
+}
+
+.hero h2 span {
+    color: var(--accent-light);
+}
+
+.hero-content > p:not(.small-heading) {
+    margin: 25px 0 35px;
+    line-height: 1.6;
+}
+
+.hero-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 700px;
+    margin: 60px auto 0;
+}
+
+.hero-cards .content-card {
+    display: block;
+    padding: 25px 15px;
+    border: 1px solid var(--hero-card-border);
+    background-color: var(--hero-card-background);
+    box-shadow: 0 4px 10px var(--shadow-color);
+    color: var(--white);
+    text-decoration: none;
+}
+
+.hero-cards .content-card h3 {
+    margin: 0 0 12px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.hero-cards .content-card p {
+    margin: 0;
+    color: var(--light-text);
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
+    .hero {
+        padding-top: 65px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .hero {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .hero h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .hero-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.hero-cards .content-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.hero-cards .content-card > a {
+    margin-top: auto;
+    padding-top: 14px;
+    color: var(--accent-light);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.hero-cards .content-card > p {
+    margin-bottom: 0;
+}
+
+@media (min-width: 551px) and (max-width: 800px) {
+    .hero h2 {
+        font-size: 44px;
+    }
+
+}

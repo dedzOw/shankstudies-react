@@ -1,0 +1,42 @@
+.page-banner h2 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 56px;
+    letter-spacing: 2px;
+}
+
+.page-banner {
+    padding: 145px 0 75px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+.page-banner h2 {
+    font-size: 45px;
+}
+
+.page-banner > .content-width > p:not(.small-heading) {
+    max-width: 700px;
+    margin: 20px auto 0;
+    color: var(--light-text);
+    line-height: 1.6;
+}
+
+.page-banner .yellow-button {
+    margin-top: 28px;
+}
+
+@media (max-width: 800px) {
+    .page-banner {
+        padding: 55px 0 50px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .page-banner h2 {
+        font-size: 30px;
+    }
+
+}

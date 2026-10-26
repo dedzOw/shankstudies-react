@@ -1,8 +1,13 @@
+import "./Footer.css";
+
+
 const Footer = () => {
-    return(
-        <section id="main-footer">
-            <p>&copy;jonnyshank</p>
-        </section>
+    return (
+        <footer id="main-footer">
+            <h2>Shank Studies</h2>
+            <p>Mr. Shank's Social Studies Class - Humphreys MS - DODEA</p>
+            <p>Questions? Email me or visit during office hours.</p>
+        </footer>
     );
 };
 

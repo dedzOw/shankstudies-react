@@ -1,12 +1,14 @@
-/* Header components */
 .main-header {
+    position: absolute;
+    top: 0;
+    z-index: 1;
     width: 100%;
     padding: 20px 0;
-    background-color: var(--main-color);
+    background-color: transparent;
     color: var(--white);
 }
 
-.main-header .header-content {
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,8 +26,40 @@
 }
 
 @media (max-width: 800px) {
+    .main-header {
+        position: static;
+        background-color: var(--main-color);
+    }
+
+}
+
+@media (max-width: 800px) {
+    .header-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+}
+
+.main-header h1 a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.main-header h1 {
+    flex-shrink: 0;
+}
+
+.main-header .header-content {
+    gap: 25px;
+}
+
+@media (max-width: 800px) {
     .main-header .header-content {
         flex-direction: column;
         gap: 20px;
     }
+
 }
