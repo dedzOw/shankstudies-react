@@ -12,10 +12,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "lucide-react": "^1.61.0",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "react-router-hash-link": "^2.4.3"
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
