@@ -1,0 +1,129 @@
+.resource-grid h3,
+.case-grid h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+}
+
+.resource-grid a {
+    margin-top: auto;
+    color: var(--red-color);
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.case-grid,
+.resource-grid {
+    display: grid;
+    gap: 18px;
+}
+
+.case-grid {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 35px;
+}
+
+.case-grid article {
+    padding: 22px;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+}
+
+.case-grid h3 {
+    margin-top: 0;
+}
+
+.case-grid p {
+    margin-bottom: 0;
+    color: var(--gray-text);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.resource-row {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 25px;
+    background-color: var(--soft-background);
+}
+
+.resource-row img {
+    width: 190px;
+    border: 1px solid var(--border-color);
+}
+
+.resource-row h3 {
+    margin-top: 0;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.resource-row p {
+    max-width: 500px;
+    color: var(--gray-text);
+    line-height: 1.6;
+}
+
+.resource-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.resource-grid article {
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+}
+
+.resource-grid h3 {
+    margin-top: 0;
+}
+
+.resource-grid p {
+    color: var(--gray-text);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 550px) {
+    .case-grid,
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .resource-row {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .resource-row img {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .case-grid,
+    .resource-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 550px) {
+    .case-grid,
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
