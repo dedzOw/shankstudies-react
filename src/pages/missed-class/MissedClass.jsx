@@ -1,6 +1,6 @@
 import PageBanner from "../../components/page-banner/PageBanner";
 import { VideoCard } from "../../components/cards/Cards";
-import units from "../../data/units";
+import units from "../../units";
 
 
 const MissedClass = () => {

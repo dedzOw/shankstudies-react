@@ -2,7 +2,7 @@ import "./Home.css";
 import Hero from "../../components/hero/Hero";
 import { Card, UnitCard } from "../../components/cards/Cards";
 import QuickLinks from "../../components/quick-links/QuickLinks";
-import units from "../../data/units";
+import units from "../../units";
 import { NavLink } from "react-router-dom";
 
 const Home = () => {

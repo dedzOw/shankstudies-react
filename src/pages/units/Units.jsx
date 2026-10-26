@@ -1,7 +1,7 @@
 import "./Units.css";
 import PageBanner from "../../components/page-banner/PageBanner";
 import UnitDetail from "../../components/unit-detail/UnitDetail";
-import units from "../../data/units";
+import units from "../../units";
 
 
 const Units = () => {
