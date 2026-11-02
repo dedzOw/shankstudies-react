@@ -81,7 +81,7 @@ const Home = () => {
                     <Card
                         title="Class Syllabus"
                         description="Read course expectations, policies, and important information."
-                        href="https://dedzow.github.io/csce242/projects/part6/resources/grade7_syllabus.pdf"
+                        href="public/resources/grade7_syllabus.pdf"
                         linkText="Open Syllabus"
                     />
                     <Card

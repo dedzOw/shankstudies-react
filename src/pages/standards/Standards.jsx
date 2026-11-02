@@ -14,7 +14,7 @@ const Standards = () => {
                 <StandardCard number="7.1" title="Native Americans" description="Students examine early settlements, cultural regions, and the diversity of Native American societies." />
                 <StandardCard number="7.2" title="Colonial Developments" description="Students study European exploration, colonization, and the development of colonial America." />
                 <StandardCard number="7.3" title="American Independence" description="Students investigate the tensions that led to the American Revolution and a new nation." />
-            </section><a className="standards-button" href="https://dedzow.github.io/csce242/projects/part6/resources/ccrs_social_studies_grades_6-8_2025-1.pdf" target="_blank" rel="noreferrer">Open the Full DoDEA Social Studies Framework to learn more→</a>
+            </section><a className="standards-button" href="public/resources/ccrs_social_studies_grades_6-8_2025-1.pdf" target="_blank" rel="noreferrer">Open the Full DoDEA Social Studies Framework to learn more→</a>
         </PortalPage>
     );
 };

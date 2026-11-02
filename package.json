@@ -12,10 +12,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "motion": "^14.9.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.4",
-    "react-router-hash-link": "^2.4.3"
+    "react-router-hash-link": "^2.4.3",
+    "yet-another-react-lightbox": "^3.33.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
