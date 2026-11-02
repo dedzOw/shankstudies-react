@@ -1,13 +1,10 @@
 .main-nav ul {
     display: flex;
     align-items: center;
+    gap: 20px;
     margin: 0;
     padding: 0;
-    list-style-type: none;
-}
-
-.main-nav li {
-    margin-left: 20px;
+    list-style: none;
 }
 
 .main-nav a {
@@ -16,6 +13,7 @@
     text-decoration: none;
 }
 
+.main-nav a:hover,
 .main-nav a.active {
     color: var(--accent-light);
 }
@@ -26,91 +24,66 @@
     color: var(--accent-color);
 }
 
-.main-nav .parent-button.active {
-    background-color: var(--accent-color);
-    color: var(--white);
-}
-
 #toggle-nav {
     display: none;
-    cursor: pointer;
-}
-
-#toggle-nav div {
-    width: 28px;
-    height: 3px;
-    margin: 5px;
-    background-color: var(--white);
-}
-
-@media (max-width: 800px) {
-    #toggle-nav {
-        display: block;
-    }
-
 }
 
 @media (max-width: 800px) {
     .main-nav {
-        width: 100%;
+        display: contents;
     }
 
-}
+    #toggle-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+        width: 36px;
+        height: 36px;
+        padding: 4px;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
 
-@media (max-width: 800px) {
+    #toggle-nav span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background: var(--white);
+    }
+
     .main-nav ul {
         display: none;
-        flex-direction: column;
-        align-items: stretch;
-        margin-top: 15px;
-    }
-
-}
-
-@media (max-width: 800px) {
-    .main-nav ul.show-small {
-        display: flex;
-    }
-
-}
-
-@media (max-width: 800px) {
-    .main-nav li {
+        grid-column: 1 / -1;
         width: 100%;
-        margin: 0;
-        border-top: 1px solid var(--outline-color);
+        margin-top: 12px;
     }
 
-}
+    .main-nav ul.show-small {
+        display: block;
+    }
 
-@media (max-width: 800px) {
-    .main-nav a {
+    .main-nav li {
+        margin: 0;
+        border-top: 1px solid var(--outline-color, #91a0bc);
+        text-align: left;
+    }
+
+    .main-nav a,
+    .main-nav .parent-button {
         display: block;
         padding: 13px;
-    }
-
-}
-
-@media (max-width: 800px) {
-    .main-nav .parent-button {
         border: 0;
         color: var(--white);
+        font-size: 13px;
     }
 
-}
-
-.main-nav a:hover {
-    color: var(--accent-light);
-}
-
-@media (max-width: 800px) {
-    .main-nav ul {
-        display: flex;
-        margin-top: 0;
+    .main-nav a:hover,
+    .main-nav a.active {
+        color: var(--accent-light);
     }
-
-    .main-nav li {
-        text-align: center;
-    }
-
 }
