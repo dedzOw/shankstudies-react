@@ -1,0 +1,111 @@
+.student-slideshow {
+    max-width: 850px;
+    margin: 30px auto 0;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+.student-slideshow .slideshow-image {
+    margin: 0;
+}
+
+.student-slideshow .slideshow-image img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    padding: 20px;
+    object-fit: contain;
+    background-color: var(--white);
+}
+
+.student-slideshow figcaption {
+    padding: 20px;
+    border-top: 3px solid var(--accent-color);
+    background-color: var(--main-color);
+    color: var(--white);
+    text-align: center;
+}
+
+.student-slideshow figcaption p {
+    margin: 0 0 8px;
+    color: var(--accent-light);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.student-slideshow figcaption h3 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+}
+
+.student-slideshow .slideshow-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 18px 20px;
+}
+
+.student-slideshow .slideshow-controls button {
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 25px;
+    background-color: var(--accent-color);
+    color: var(--main-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.student-slideshow .slideshow-controls button:hover {
+    background-color: var(--accent-light);
+}
+
+.student-slideshow .slideshow-controls button:focus-visible {
+    outline: 2px solid var(--main-color);
+    outline-offset: 3px;
+}
+
+.student-slideshow .slideshow-controls button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.student-slideshow .slideshow-controls p {
+    margin: 0;
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.slideshow-empty {
+    padding: 30px;
+    text-align: center;
+    color: var(--gray-text);
+}
+
+@media (max-width: 550px) {
+    .student-slideshow .slideshow-image img {
+        height: 300px;
+        padding: 12px;
+    }
+
+    .student-slideshow figcaption h3 {
+        font-size: 19px;
+    }
+
+    .student-slideshow .slideshow-controls {
+        padding: 15px 12px;
+    }
+
+    .student-slideshow .slideshow-controls button {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+}
