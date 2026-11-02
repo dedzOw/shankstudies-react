@@ -69,6 +69,28 @@
     font-size: 12px;
 }
 
+.hero-cards .hero-card {
+    display: block;
+    padding: 25px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    background-color: rgba(14, 29, 56, 0.95);
+    color: white;
+    text-decoration: none;
+}
+
+.hero-cards .hero-card h3 {
+    margin: 0 0 12px;
+    color: white;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+}
+
+.hero-cards .hero-card p {
+    margin: 0;
+    color: #c9ced7;
+    font-size: 12px;
+}
+
 @media (max-width: 800px) {
     .hero {
         padding-top: 65px;

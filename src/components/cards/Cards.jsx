@@ -34,11 +34,25 @@ export const VideoCard = (props) => {
     return (
         <article className="video-card">
             <p>{props.unit.unit}</p>
+
             <h3>{props.unit.title}</h3>
-            <div className="video-placeholder">{props.unit.unit} lesson video</div>
-            <p className="video-description">{props.unit.description}</p>
-            <HashLink to={`/units#${props.unit.anchor}`}>
-                Review Unit {props.unit.id} topics &rarr;
+
+            <iframe
+                src={props.unit.video_url}
+                title={props.unit.video_title}
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+            ></iframe>
+
+            <p className="video-description">
+                {props.unit.description}
+            </p>
+
+            <HashLink
+                to={props.unit.review_link.replace("units.html", "/units")}
+            >
+                {props.unit.review_text} &rarr;
             </HashLink>
         </article>
     );
@@ -64,3 +78,5 @@ export const StudentWorkCard = (props) => {
         </article>
     );
 };
+
+

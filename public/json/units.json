@@ -1,0 +1,52 @@
+[
+    {
+        "_id": 1,
+        "unit": "UNIT 1",
+        "title": "Native Americans, Early Encounters & Colonial Development",
+        "description": "Review early American civilizations, Native American communities, European exploration, and colonial development.",
+        "video_url": "https://www.youtube.com/embed/TTYOQ05oDOI",
+        "video_title": "Unit 1 lesson video",
+        "review_link": "units.html#unit-one",
+        "review_text": "Review Unit 1 topics"
+    },
+    {
+        "_id": 2,
+        "unit": "UNIT 2",
+        "title": "The Road to Independence",
+        "description": "Review the conflicts between Great Britain and the colonies that led Americans toward independence.",
+        "video_url": "https://www.youtube.com/embed/Wyip07JxiT4",
+        "video_title": "Unit 2 lesson video",
+        "review_link": "units.html#unit-two",
+        "review_text": "Review Unit 2 topics"
+    },
+    {
+        "_id": 3,
+        "unit": "UNIT 3",
+        "title": "A New Nation - The U.S. Constitution",
+        "description": "Review the American Revolution, Articles of Confederation, and the creation of the Constitution.",
+        "video_url": "https://www.youtube.com/embed/3sIKptbAAV0",
+        "video_title": "Unit 3 lesson video",
+        "review_link": "units.html#unit-three",
+        "review_text": "Review Unit 3 topics"
+    },
+    {
+        "_id": 4,
+        "unit": "UNIT 4",
+        "title": "A Nation Grows - Expansion & Reform",
+        "description": "Review the early republic, westward expansion, and reform movements that changed American society.",
+        "video_url": "https://www.youtube.com/embed/Q16OZkgSXfM",
+        "video_title": "Unit 4 lesson video",
+        "review_link": "units.html#unit-four",
+        "review_text": "Review Unit 4 topics"
+    },
+    {
+        "_id": 5,
+        "unit": "UNIT 5",
+        "title": "A Nation Divided - The Civil War",
+        "description": "Review sectionalism, slavery, the Civil War, and the changes that reshaped the United States.",
+        "video_url": "https://www.youtube.com/embed/tsxmyL7TUJg",
+        "video_title": "Unit 5 lesson video",
+        "review_link": "units.html#unit-five",
+        "review_text": "Review Unit 5 topics"
+    }
+]

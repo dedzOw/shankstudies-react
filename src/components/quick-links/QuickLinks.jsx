@@ -1,16 +1,60 @@
 import "./QuickLinks.css";
-import { Card } from "../cards/Cards";
+import { useEffect, useState } from "react";
+
+const UsefulLink = (props) => {
+    return (
+        <a
+            className="content-card"
+            href={props.link.url}
+            target="_blank"
+            rel="noreferrer"
+        >
+            <h3>{props.link.title}</h3>
+            <p>{props.link.description}</p>
+        </a>
+    );
+};
 
 const QuickLinks = (props) => {
+    const [links, setLinks] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState("");
+
+    useEffect(() => {
+        const getUsefulLinks = async () => {
+            try {
+                const response = await fetch(
+                    `${import.meta.env.BASE_URL}json/useful-links.json`
+                );
+
+                if (!response.ok) {
+                    throw new Error("Could not load links.");
+                }
+
+                const data = await response.json();
+                setLinks(data);
+            } catch {
+                setError("Sorry, the useful links could not be loaded.");
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        getUsefulLinks();
+    }, []);
+
     return (
         <section className="quick-links">
             <div className="content-width">
                 <h2>{props.title || "Quick Links"}</h2>
+
+                {loading && <p role="status">Loading links...</p>}
+                {error && <p role="alert">{error}</p>}
+
                 <section className="quick-link-cards">
-                    <Card title="iCivics" description="Games and civic learning" href="https://www.icivics.org/games" linkText="Visit Website" />
-                    <Card title="Khan Academy History" description="U.S. history review" href="https://www.khanacademy.org/humanities/us-history" linkText="Visit Website" />
-                    <Card title="Crash Course U.S. History" description="History videos" href="https://thecrashcourse.com/topic/ushistory/" linkText="Visit Website" />
-                    <Card title="National Archives" description="Founding documents" href="https://www.archives.gov/founding-docs" linkText="Visit Website" />
+                    {links.map((link) => (
+                        <UsefulLink key={link._id} link={link} />
+                    ))}
                 </section>
             </div>
         </section>
