@@ -31,8 +31,7 @@ const MissedClass = () => {
     return (
         <main id="missed-class" className="page">
             <PageBanner heading="LESSON VIDEOS" title="Missed Class?" description="Choose your unit to watch lesson videos and review what you missed.">
-                <a className="yellow-button" href="https://classroom.google.com/" target="_blank">
-                </a>
+                <a className="yellow-button" href="https://classroom.google.com/" target="_blank" rel="noreferrer">Open Google Classroom</a>
             </PageBanner>
 
             <section className="page-section light-section">
