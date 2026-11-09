@@ -10,9 +10,7 @@ const MissedClass = () => {
     useEffect(() => {
         const getUnits = async () => {
             try {
-                const response = await fetch(
-                    `${import.meta.env.BASE_URL}json/units.json`
-                );
+                const response = await fetch("https://shankstudies-backend.onrender.com/api/studies");
 
                 if (!response.ok) {
                     throw new Error("Could not load lessons.");
@@ -21,7 +19,7 @@ const MissedClass = () => {
                 const data = await response.json();
                 setUnits(data);
             } catch {
-                setError("Sorry, the lessons could not be loaded.");
+                setError("Sorry, the lessons could not be loaded. Please try again later.");
             } finally {
                 setLoading(false);
             }
@@ -32,17 +30,8 @@ const MissedClass = () => {
 
     return (
         <main id="missed-class" className="page">
-            <PageBanner
-                heading="LESSON VIDEOS"
-                title="Missed Class?"
-                description="Choose your unit to watch lesson videos and review what you missed."
-            >
-                <a
-                    className="yellow-button"
-                    href="https://classroom.google.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                >
+            <PageBanner heading="LESSON VIDEOS" title="Missed Class?" description="Choose your unit to watch lesson videos and review what you missed.">
+                <a className="yellow-button" href="https://classroom.google.com/" target="_blank">
                 </a>
             </PageBanner>
 
