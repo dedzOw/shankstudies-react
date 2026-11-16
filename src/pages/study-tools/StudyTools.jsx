@@ -67,7 +67,7 @@ const StudyTools = () => {
                     </section>
                 </div>
             </section>
-            <QuickLinks title="Helpful History Websites" />
+            <QuickLinks title="Helpful History Websites" showForm={true} />
         </main>
     );
 };

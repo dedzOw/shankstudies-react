@@ -1,0 +1,64 @@
+.resource-modal {
+    width: 90%;
+    max-width: 600px;
+    max-height: 85vh;
+    padding: 30px;
+    overflow-y: auto;
+    border: 0;
+    border-top: 5px solid var(--accent-color);
+    border-radius: 8px;
+    background-color: var(--white);
+    color: var(--main-color);
+}
+
+.resource-modal::backdrop {
+    background-color: rgba(10, 20, 40, 0.75);
+}
+
+.resource-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.resource-modal-header .small-heading {
+    margin: 0;
+    color: var(--red-color);
+}
+
+.resource-close {
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--background-color);
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.resource-modal #resource-modal-title {
+    margin: 25px 0 15px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    overflow-wrap: anywhere;
+}
+
+.resource-modal-description {
+    margin: 22px 0;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.resource-modal-url {
+    margin-bottom: 25px;
+    color: var(--gray-text);
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 550px) {
+    .resource-modal {
+        padding: 25px 18px;
+    }
+}
